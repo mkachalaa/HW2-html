@@ -5,25 +5,20 @@
     <meta charset="UTF-8">
     <title>My project</title>
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 
 <body>
-
-    <div class="main">
+    <header>
         <h1 class="important">HW2-HTML</h1>
-        <h2 class="HW"> Таблиця: Ім'я, Прізвище, Телефон, Email.
-        </h2>
-
-
+    </header>
+    <div class="main">
         <table>
+            <h1 class="table-name"> Таблиця: Ім'я, Прізвище, Телефон, Email.</h1>
             <tr>
-                <td><b>Ім'я</b></td>
-                <td><b>Прізвище</b></td>
-                <td><b>Телефон</b></td>
-                <td><b>Email</b></td>
-
+                <th>Ім'я</th>
+                <th>Прізвище</th>
+                <th>Телефон</th>
+                <th>Email</th>
             </tr>
             <tr>
                 <td>Ігор</td>
@@ -37,19 +32,18 @@
                 <td>66-55-55</td>
                 <td>tarakan@</td>
             </tr>
-            <t>
+            <tr>
                 <td>Давід</td>
                 <td>Многоходовочка</td>
                 <td>55-555-6</td>
                 <td>david@</td>
-                <tr>
-                    <td>Назар</td>
-                    <td>Фарт</td>
-                    <td>566-66</td>
-                    <td>fart@</td>
-                </tr>
+            <tr>
+                <td>Назар</td>
+                <td>Фарт</td>
+                <td>566-66</td>
+                <td>fart@</td>
+            </tr>
         </table>
-
 
         <div id="newtext">
             <h3 class="stati">Форма Ім'я, Прізвище</h3>
@@ -62,12 +56,10 @@
 
         </div>
 
-
         <div id="form">
             <h3 class="stati">Форма статі</h3>
             <h4 class="MJ">
                 <p><b>Яка ваша стать?</b></p>
-
                 <form>
 
                     <input type="radio" checked name="browser" value="Чоловік" /><label for="value">Ч</label>
@@ -79,30 +71,20 @@
 
         <div id="comment">
             <h3 class="stati">Форма коментаря</h3>
-            <h4 class="mycom">
-                <p><textarea placeholder="Напиши свій коментар" rows="5" cols="40" name="text"></textarea></p>
-            </h4>
-
+            <p><textarea placeholder="Напиши свій коментар" rows="5" cols="40" name="text"></textarea></p>
         </div>
-
 
         <div id="sity">
             <h3 class="stati">Форма вибору міста</h3>
-            <h4 class="sity1">
 
+            <select name="city">
+                <option disabled="disabled" selected="selected">-- Виберіть ваше місто --</option>
+                <option>Lviv</option>
+                <option>London</option>
+                <option>La</option>
+                <option>Paris</option>
+            </select>
 
-
-                <select name="city">
-                    <option disabled="disabled" selected="selected">-- Виберіть ваше місто --</option>
-                    <option>Lviv</option>
-                    <option>London</option>
-                    <option>La</option>
-                    <option>Paris</option>
-                </select>
-
-
-
-            </h4>
 
         </div>
 
@@ -119,7 +101,7 @@
             </h4>
         </div>
 
-
+    </div>
 </body>
 
 </html>
